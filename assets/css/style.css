@@ -1,3 +1,25 @@
 .custom-nav .navbar-brand img {
   max-width: 3rem;
 }
+
+.first-row .img-col img {
+  max-width: 50%;
+}
+
+.third-row .img-col img {
+  max-width: 80%;
+  box-shadow: 10px 10px 5px grey;
+}
+.third-row h4 {
+  margin-top: 1rem;
+}
+
+.footer-container {
+  margin-top: 2rem;
+}
+.footer-container .social-icon {
+  max-width: 4rem;
+}
+.footer-container .footer-logo {
+  max-width: 6rem;
+}
