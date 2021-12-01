@@ -38,6 +38,8 @@
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
     </style>
 
     <!-- Bootstrap CSS -->
@@ -56,7 +58,7 @@
   <body>
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark custom-nav">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-nav">
         <a class="navbar-brand" href="#">
           <img src="/assets/images/logo.png" alt="logo" class="nav-logo"
         /></a>
@@ -80,7 +82,10 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../assets/pages/about.html">About</a>
+              <a class="nav-link active" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#projects">Projects</a>
             </li>
           </ul>
         </div>
@@ -91,9 +96,27 @@
     <div class="container">
       <!-- FIRST ROW -->
       <div class="row custom-row first-row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-col">
-          <h1>Thanks for stopping by</h1>
-          <p>text text text</p>
+        <div
+          class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 text-col"
+          id="about-me"
+        >
+          <h1>Kurt Reynolds' Portfolio</h1>
+          <p>
+            My journey into web development began in 2021, at the suggestion of
+            a good friend and long time web developer. Prior to web development,
+            I worked as a property manager in the multifamily housing industry
+            for seven years. As well I had a side business making Wordpress
+            websites for clients.
+          </p>
+          <p>
+            I have a passion for creativity and learning. Those passions have
+            transpired into many interests, skill sets, and hobbies. Some of
+            which include creating short films and writing and performing music.
+          </p>
+          <p>
+            Now, I've found that coding has become the most recent addition to
+            how my passion has transpired.
+          </p>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 img-col">
           <img src="/assets/images/unsplash.jpg" alt="alt" />
@@ -102,54 +125,108 @@
       <!-- END FIRST ROW -->
 
       <!-- SECOND ROW -->
-      <div class="row custom-row second-row">
+      <div class="row custom-row second-row" id="projects">
         <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
           <h2>Projects</h2>
-      </div>
-      <!-- END SECOND ROW -->
+        </div>
+        <!-- END SECOND ROW -->
 
-      <!-- THIRD ROW -->
-      <div class="row custom-row third-row">
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
-          <img
-            src="/assets/images/know-nostalgia-960x540.jpg"
-            alt="knownostalgia"
-          />
-          <h4>Know(Nostalgia)</h4>
-          <p>info info</p>
-          <button class="btn btn-warning">View Code</button>
-          <button class="btn btn-info">Visit Site</button>
+        <!-- THIRD ROW -->
+        <div class="row custom-row third-row">
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
+            <img
+              src="/assets/images/know-nostalgia-960x540.jpg"
+              alt="knownostalgia"
+            />
+            <h4>Know(Nostalgia)</h4>
+            <p>
+              Created as a coding bootcamp project. The site was built using
+              Bootstrap, SCSS, and vanilla JavaScript. One highlight of the site
+              is that it utilizes an API to access a movie database to allow
+              users to search for movies. I have limited the search results to
+              only display movies that were released between 1990 - 2009, as
+              that is the decades the site is dedicated to.
+            </p>
+            <a href="https://github.com/kurtreyn/knowNostalgia" target="_blank">
+              <button class="btn btn-code">View Code</button>
+            </a>
+            <a
+              href="https://knownostalgia.netlify.app/index.html"
+              target="_blank"
+            >
+              <button class="btn align-self-end btn-visit">Visit Site</button>
+            </a>
+          </div>
+          <div
+            class="
+              col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3
+              flex-column
+              img-col
+            "
+          >
+            <img src="/assets/images/calcApp-960x540.jpg" alt="calculator" />
+            <h4>Calculator App</h4>
+            <p>This app was built with vanilla JavaScript, HTML & CSS.</p>
+            <a href="https://github.com/kurtreyn/calculatorapp" target="_blank">
+              <button class="btn btn-code">View Code</button>
+            </a>
+            <a href="https://kurtreyn.github.io/calculatorapp/" target="_blank">
+              <button class="btn btn-visit">Visit Site</button>
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
+            <img
+              src="/assets/images/iDea-thumnail-960x540.jpg"
+              alt="idea photography"
+            />
+            <h4>i.Dea photography</h4>
+            <p>
+              A site made for a ficticious photography studio. This is the first
+              site I made using Bootstrap. One of the highlights of this site is
+              a custom made lightbox on the gallery page, which is controlled
+              with jQuery.
+            </p>
+            <a
+              href="https://github.com/kurtreyn/photographysite"
+              target="_blank"
+            >
+              <button class="btn btn-code">View Code</button>
+            </a>
+            <a
+              href="https://kurtreyn.github.io/photographysite/index.html"
+              target="_blank"
+            >
+              <button class="btn btn-visit">Visit Site</button>
+            </a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
+            <img
+              src="/assets/images/storyteller-thumbnail-960x540.jpg"
+              alt="storyteller"
+            />
+            <h4>Storyteller Studios</h4>
+            <p>
+              This is the first site I made when I started to learn coding. Made
+              with HTML and CSS. The site is for my small film production group,
+              Storyteller Studios.
+            </p>
+            <a href="https://github.com/kurtreyn/storyteller" target="_blank">
+              <button class="btn btn-code">View Code</button>
+            </a>
+            <a href="https://storytellerstudios.netlify.app" target="_blank">
+              <button class="btn btn-visit">Visit Site</button>
+            </a>
+          </div>
         </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
-          <img src="/assets/images/calcApp-960x540.jpg" alt="calculator" />
-          <h4>Calculator App</h4>
-          <p>info info</p>
-          <button class="btn btn-warning">View Code</button>
-          <button class="btn btn-info">Visit Site</button>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
-          <img src="/assets/images/iDea-thumnail-960x540.jpg" alt="idea photography" />
-          <h4>i.Dea photography</h4>
-          <p>info info</p>
-          <button class="btn btn-warning">View Code</button>
-          <button class="btn btn-info">Visit Site</button>
-        </div>
-        <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 img-col">
-          <img src="/assets/images/storyteller-thumbnail-960x540.jpg" alt="storyteller" />
-          <h4>Storyteller Studios</h4>
-          <p>info info</p>
-          <button class="btn btn-warning">View Code</button>
-          <button class="btn btn-info">Visit Site</button>
-        </div>
+        <!-- END THIRD ROW -->
       </div>
-      <!-- END THIRD ROW -->
     </div>
     <!-- END MAIN CONTAINER -->
 
     <footer class="site-footer custom-footer">
       <div class="container-fluid footer-container">
         <div class="row">
-          <div class="col-4 col-sm-4 text-center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
             <a href="https://github.com/kurtreyn?tab=repositories">
               <img
                 src="/assets/icons/github-color-drawn-style.svg"
@@ -179,15 +256,11 @@
               />
             </a>
           </div>
-          <div class="col-4 col-sm-4 text-center">
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
             <p class="copyright">&copy; Kurt Reynolds, 2021</p>
           </div>
-          <div class="col-4 col-sm-4 text-center">
-            <img
-              src="/assets/images/logo.png"
-              alt="logo"
-              class="footer-logo"
-            />
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center">
+            <img src="/assets/images/logo.png" alt="logo" class="footer-logo" />
           </div>
         </div>
       </div>
