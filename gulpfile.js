@@ -22,10 +22,10 @@ const jsBundle = () =>
     'node_modules/jquery/dist/jquery.slim.min.js',
     'node_modules/popper.js/dist/umd/popper.min.js',
     'node_modules/bootstrap/dist/js/bootstrap.min.js',
-    'assets/scripts/main.js',
+    'assets/js/main.js',
   ])
     .pipe(concat('main.js'))
-    .pipe(dest('dist/assets/scripts'));
+    .pipe(dest('dist/assets/js'));
 
 //minify html
 function minify() {
@@ -38,9 +38,9 @@ function minify() {
 //uglify JavaScript
 function es() {
   return gulp
-    .src('./assets/scripts/**/*.js')
+    .src('./assets/js/**/*.js')
     .pipe(terser())
-    .pipe(gulp.dest('dist/assets/scripts'));
+    .pipe(gulp.dest('dist/assets/js'));
 }
 exports.default = es;
 
@@ -75,7 +75,7 @@ async function mincss() {
         uglyComments: true,
       })
     )
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/assets/css'));
 }
 
 exports.style = style;

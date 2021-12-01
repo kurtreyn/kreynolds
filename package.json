@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run clean && gulp cssBundle && gulp jsBundle && npm run imagemin && gulp mincss && gulp es && gulp minify",
     "start": "gulp watch",
-    "imagemin": "imagemin assets/images/* -o dist/assets/images",
+    "imagemin": "imagemin assets/images/* -o dist/assets/images && imagemin assets/icons/* -o dist/assets/icons",
     "clean": "rimraf dist"
   },
   "author": "Kurt Reynolds",

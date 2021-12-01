@@ -1,6 +1,8 @@
 body {
   font-family: "Comfortaa", cursive, sans-serif;
-  background-image: linear-gradient(to bottom right, #8ecae6, #ffb703);
+}
+body a {
+  display: contents;
 }
 
 .custom-nav {
@@ -9,6 +11,9 @@ body {
 .custom-nav a {
   color: #fff;
 }
+.custom-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 .custom-nav .navbar-brand img {
   max-width: 3rem;
 }
@@ -16,19 +21,26 @@ body {
 .custom-row .btn {
   margin-bottom: 0.5rem;
   bottom: 0;
+  box-shadow: 1px 1px 5px #000;
 }
 .custom-row .btn-code {
   background-color: #fb8500;
 }
+.custom-row .btn-code:hover {
+  background-color: rgba(251, 133, 0, 0.6);
+}
 .custom-row .btn-visit {
   background-color: #219ebc;
+}
+.custom-row .btn-visit:hover {
+  background-color: rgba(33, 158, 188, 0.6);
 }
 
 .first-row {
   margin-top: 5rem;
 }
 .first-row .img-col img {
-  max-width: 50%;
+  max-width: 90%;
 }
 .first-row h1 {
   font-family: "Road Rage", cursive, sans-serif;
@@ -56,7 +68,7 @@ body {
   margin-top: 1rem;
 }
 .third-row .img-col img {
-  max-width: 80%;
+  max-width: 100%;
   box-shadow: 10px 10px 5px grey;
 }
 .third-row .img-col img:hover {
@@ -76,6 +88,9 @@ body {
 }
 .custom-footer .footer-container .social-icon {
   max-width: 4rem;
+}
+.custom-footer .footer-container .social-icon:hover {
+  transform: scale(1.05);
 }
 .custom-footer .footer-container .footer-logo {
   max-width: 6rem;

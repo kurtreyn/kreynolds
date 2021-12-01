@@ -7,8 +7,9 @@ $nav-footer-text: #fff;
 
 body {
   font-family: 'Comfortaa', cursive, sans-serif;
-  // background-color: rgba($colorOne, 0.3);
-  background-image: linear-gradient(to bottom right, rgba($colorOne,0.1), rgba($colorFour, 0.1);
+  a {
+    display: contents;
+  }
 }
 
 .custom-nav {
@@ -16,6 +17,9 @@ body {
 
   a {
     color: $nav-footer-text;
+  }
+  a:hover {
+    background-color: rgba($nav-footer-text, 0.2);
   }
 
   .navbar-brand {
@@ -29,14 +33,20 @@ body {
   .btn {
     margin-bottom: 0.5rem;
     bottom: 0;
-    box-shadow: 10px 10px 5px #000;
+    box-shadow: 1px 1px 5px #000;
   }
+
   .btn-code {
     background-color: $button-code;
-    
+  }
+  .btn-code:hover {
+    background-color: rgba($button-code, 0.6);
   }
   .btn-visit {
     background-color: $button-visit;
+  }
+  .btn-visit:hover {
+    background-color: rgba($button-visit, 0.6);
   }
 }
 
@@ -44,7 +54,7 @@ body {
   margin-top: 5rem;
   .img-col {
     img {
-      max-width: 50%;
+      max-width: 90%;
     }
   }
   h1 {
@@ -73,7 +83,7 @@ body {
   .img-col {
     margin-top: 1rem;
     img {
-      max-width: 80%;
+      max-width: 100%;
       box-shadow: 10px 10px 5px grey;
     }
     img:hover {
@@ -94,6 +104,9 @@ body {
     margin-top: 2rem;
     .social-icon {
       max-width: 4rem;
+    }
+    .social-icon:hover {
+      transform: scale(1.05);
     }
     .footer-logo {
       max-width: 6rem;
