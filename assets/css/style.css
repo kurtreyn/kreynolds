@@ -54,7 +54,7 @@ body a {
 }
 .second-row h2 {
   font-family: "Road Rage", cursive, sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #ffb703;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -66,16 +66,15 @@ body a {
 }
 .third-row .img-col {
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .third-row .img-col img {
-  max-width: 100%;
+  margin: 10px;
+  max-width: 40%;
   box-shadow: 10px 10px 5px grey;
 }
 .third-row .img-col img:hover {
-  transform: scale(1.1);
-}
-.third-row h4 {
-  margin-top: 1rem;
+  transform: scale(1.05);
 }
 
 .custom-footer {
