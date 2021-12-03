@@ -121,9 +121,6 @@ body a {
   color: #fb8500;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
-.third-row .overlay-hide {
-  display: none;
-}
 
 .custom-footer {
   color: #fff;

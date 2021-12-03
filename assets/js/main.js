@@ -1,40 +1,96 @@
 'use strict';
 
-const imgCol = document.querySelectorAll('.img-col');
-// let leftOverlay = document.createElement('div');
-// let rightOverlay = document.createElement('div');
-const leftOverlay = document.querySelectorAll('.left-overlay');
-const rightOverlay = document.querySelectorAll('.right-overlay');
+const imgCol = document.querySelectorAll('[data-div-info]');
+const titles = document.querySelectorAll('[data-title-info]');
+let leftOverlay = document.createElement('div');
+let rightOverlay = document.createElement('div');
+let divInfo = '';
+let titleInfo = '';
+linkInfo = '';
+let code = '';
+let page = '';
 
-function mousedOver() {
-  console.log('mouse over');
+const linkList = {
+  nostalgiaCode: 'https://github.com/kurtreyn/knowNostalgia',
+  nostalgiaPage: 'https://knownostalgia.netlify.app/index.html',
+  calcCode: 'https://github.com/kurtreyn/calculatorapp',
+  calcPage: 'https://kurtreyn.github.io/calculatorapp/',
+  ideaCode: 'https://github.com/kurtreyn/photographysite',
+  ideaPage: 'https://kurtreyn.github.io/photographysite/index.html',
+  storyCode: 'https://github.com/kurtreyn/storyteller',
+  storyPage: 'https://storytellerstudios.netlify.app',
+};
+
+function createOverlay(codeLink, pageLink) {
+  for (let l = 0; l < imgCol.length; l++) {
+    linkInfo = imgCol[l].getAttribute('data-div-info');
+    switch (linkInfo) {
+      case 'nostalgia':
+        code = linkList.nostalgiaCode;
+        page = linkList.nostalgiaPage;
+        break;
+      case 'idea':
+        code = linkList.ideaCode;
+        page = linkList.ideaPage;
+        break;
+      case 'calc':
+        code = linkList.calcCode;
+        page = linkList.calcPage;
+        break;
+      case 'story':
+        code = linkList.storyCode;
+        page = linkList.storyPage;
+        break;
+    }
+  }
+
+  leftOverlay.innerHTML = `
+    <div class="left-overlay">
+        <a href="${codeLink}" target="_blank">View Code</a>
+    </div>
+    `;
+  rightOverlay.innerHTML = `
+    <div class="right-overlay">
+        <a href="${pageLink}" target="_blank">View Page</a>
+    </div>
+    `;
 }
 
-// function createOverlay() {
-//   leftOverlay.innerHTML = `
-//     <div class="left-overlay">
-//         <a href="#">View Code</a>
-//     </div>
-//     `;
-//   rightOverlay.innerHTML = `
-//     <div class="right-overlay">
-//         <a href="#">View Page</a>
-//     </div>
-//     `;
-//   addOverlay();
-// }
+function addOverlay() {
+  divInfo = this.getAttribute('data-div-info');
+  // console.log(this);
 
-function showOverlay() {
-  leftOverlay.classList.remove('overlay-hide');
-  rightOverlay.classList.remove('overlay-hide');
+  for (let i = 0; i < imgCol.length; i++) {
+    // console.log(imgCol[i]);
+    titleInfo = titles[i].getAttribute('data-title-info');
+
+    if (divInfo === titleInfo) {
+      // console.log(`divInfo is: ${divInfo}`);
+      // console.log(`titleInfo is: ${titleInfo}`);
+
+      createOverlay(code, page);
+      imgCol[i].appendChild(leftOverlay);
+      imgCol[i].appendChild(rightOverlay);
+    } else {
+      // imgCol[i].removeChild(leftOverlay);
+      // imgCol[i].removeChild(rightOverlay);
+    }
+  }
 }
 
-// function addOverlay() {
-//   imgCol.appendChild(leftOverlay);
-// }
+function removeOverlay() {
+  divInfo = this.getAttribute('data-div-info');
+
+  for (let x = 0; x < titles.length; x++) {
+    titleInfo = titles[x].getAttribute('data-title-info');
+    if (divInfo === titleInfo) {
+      imgCol[x].removeChild(leftOverlay);
+      imgCol[x].removeChild(rightOverlay);
+    }
+  }
+}
 
 for (const ic of imgCol) {
-  ic.addEventListener('mouseover', showOverlay);
+  ic.addEventListener('mouseenter', addOverlay);
+  ic.addEventListener('mouseleave', removeOverlay);
 }
-
-// imgCol.addEventListener('mouseover', mousedOver);
