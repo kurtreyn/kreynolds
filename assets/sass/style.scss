@@ -90,56 +90,57 @@ body {
       max-width: 100%;
       box-shadow: 10px 10px 5px grey;
     }
-    img:hover {
-      transform: scale(1.05);
-    }
-
-    h4 {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-family: 'Road Rage', cursive, sans-serif;
-      font-size: 3rem;
-      color: $colorOne;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    }
+    // img:hover {
+    //   transform: scale(1.05);
   }
-  .left-overlay {
-    position: absolute;
-    height: 100%;
-    width: 5rem;
-    left: 0;
-    background-color: rgba($colorOne, 0.8);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
 
-    a {
-      font-family: 'Road Rage', cursive, sans-serif;
-      font-size: 1.7rem;
-      color: $button-code;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    }
+  h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Road Rage', cursive, sans-serif;
+    font-size: 3rem;
+    color: $colorOne;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
-  .right-overlay {
-    position: absolute;
-    height: 100%;
-    width: 5rem;
-    right: 0;
-    background-color: rgba($colorOne, 0.8);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
+}
+.left-overlay {
+  position: absolute;
+  height: 100%;
+  width: 5rem;
+  left: 0;
+  margin: 10px;
+  background-color: rgba($colorOne, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
 
-    a {
-      font-family: 'Road Rage', cursive, sans-serif;
-      font-size: 1.7rem;
-      color: $button-code;
-      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-    }
+  a {
+    font-family: 'Road Rage', cursive, sans-serif;
+    font-size: 1.7rem;
+    color: $button-code;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+}
+.right-overlay {
+  position: absolute;
+  height: 100%;
+  width: 5rem;
+  right: 0;
+  margin: 10px;
+  background-color: rgba($colorOne, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+
+  a {
+    font-family: 'Road Rage', cursive, sans-serif;
+    font-size: 1.7rem;
+    color: $button-code;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
 }
 

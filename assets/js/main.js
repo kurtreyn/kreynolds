@@ -6,7 +6,8 @@ let leftOverlay = document.createElement('div');
 let rightOverlay = document.createElement('div');
 let divInfo = '';
 let titleInfo = '';
-linkInfo = '';
+let linkInfo = '';
+// let hFourInfo = '';
 let code = '';
 let page = '';
 
@@ -22,27 +23,8 @@ const linkList = {
 };
 
 function createOverlay(codeLink, pageLink) {
-  for (let l = 0; l < imgCol.length; l++) {
-    linkInfo = imgCol[l].getAttribute('data-div-info');
-    switch (linkInfo) {
-      case 'nostalgia':
-        code = linkList.nostalgiaCode;
-        page = linkList.nostalgiaPage;
-        break;
-      case 'idea':
-        code = linkList.ideaCode;
-        page = linkList.ideaPage;
-        break;
-      case 'calc':
-        code = linkList.calcCode;
-        page = linkList.calcPage;
-        break;
-      case 'story':
-        code = linkList.storyCode;
-        page = linkList.storyPage;
-        break;
-    }
-  }
+  // let linkInfo = this.getAttribute('data-div-info');
+  // console.log(this);
 
   leftOverlay.innerHTML = `
     <div class="left-overlay">
@@ -67,7 +49,19 @@ function addOverlay() {
     if (divInfo === titleInfo) {
       // console.log(`divInfo is: ${divInfo}`);
       // console.log(`titleInfo is: ${titleInfo}`);
-
+      if (divInfo === 'nostalgia') {
+        code = linkList.nostalgiaCode;
+        page = linkList.nostalgiaPage;
+      } else if (divInfo === 'idea') {
+        code = linkList.ideaCode;
+        page = linkList.ideaPage;
+      } else if (divInfo === 'calc') {
+        code = linkList.calcCode;
+        page = linkList.calcPage;
+      } else if (divInfo === 'story') {
+        code = linkList.storyCode;
+        page = linkList.storyPage;
+      }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
       imgCol[i].appendChild(rightOverlay);
