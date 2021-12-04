@@ -63,7 +63,7 @@ function watch() {
   });
   gulp.watch('./assets/sass/**/*.scss', style);
   gulp.watch('./**/*.html').on('change', browserSync.reload);
-  gulp.watch('./scripts/**/*.js').on('change', browserSync.reload);
+  gulp.watch('./assets/js/**/*.js').on('change', browserSync.reload);
 }
 
 //minify CSS

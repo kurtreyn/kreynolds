@@ -54,7 +54,7 @@ body a {
 }
 .second-row h2 {
   font-family: "Road Rage", cursive, sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #ffb703;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -66,16 +66,61 @@ body a {
 }
 .third-row .img-col {
   margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
 }
 .third-row .img-col img {
+  margin: 10px;
   max-width: 100%;
   box-shadow: 10px 10px 5px grey;
 }
-.third-row .img-col img:hover {
-  transform: scale(1.1);
-}
 .third-row h4 {
-  margin-top: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Road Rage", cursive, sans-serif;
+  font-size: 3rem;
+  color: #8ecae6;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.left-overlay {
+  position: absolute;
+  height: 100%;
+  width: 5rem;
+  left: 0;
+  margin: 10px;
+  background-color: rgba(142, 202, 230, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.left-overlay a {
+  font-family: "Road Rage", cursive, sans-serif;
+  font-size: 1.7rem;
+  color: #fb8500;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.right-overlay {
+  position: absolute;
+  height: 100%;
+  width: 5rem;
+  right: 0;
+  margin: 10px;
+  background-color: rgba(142, 202, 230, 0.8);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.right-overlay a {
+  font-family: "Road Rage", cursive, sans-serif;
+  font-size: 1.7rem;
+  color: #fb8500;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .custom-footer {
