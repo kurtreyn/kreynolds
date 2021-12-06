@@ -40,7 +40,7 @@ body a {
   margin-top: 5rem;
 }
 .first-row .img-col img {
-  max-width: 90%;
+  max-width: 50%;
 }
 .first-row h1 {
   font-family: "Road Rage", cursive, sans-serif;
@@ -121,6 +121,33 @@ body a {
   font-size: 1.7rem;
   color: #fb8500;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.modal-window {
+  width: 25rem;
+  padding: 0.5rem;
+  position: absolute;
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.modal-window .card-title {
+  font-family: "Road Rage", cursive, sans-serif;
+  font-size: 2rem;
+  color: #fb8500;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+.modal-window .code-button {
+  background-color: #fb8500;
+}
+.modal-window .page-button {
+  background-color: #219ebc;
+}
+
+.hide-modal {
+  display: none;
 }
 
 .custom-footer {

@@ -88,3 +88,10 @@ for (const ic of imgCol) {
   ic.addEventListener('mouseenter', addOverlay);
   ic.addEventListener('mouseleave', removeOverlay);
 }
+
+/*
+Modal window controlls
+*/
+const modal = document.querySelector('.modal-window');
+
+modal.display('block');
