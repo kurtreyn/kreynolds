@@ -89,9 +89,41 @@ for (const ic of imgCol) {
   ic.addEventListener('mouseleave', removeOverlay);
 }
 
-/*
-Modal window controlls
-*/
-const modal = document.querySelector('.modal-window');
+// MODAL WINDOW CONTROLS
+const modalWindow = document.querySelector('#modal-window');
+const closeModalBtn = document.querySelector('.modal-close-button');
+const modalTitle = document.querySelector('#modal-window-title');
+const modalImg = document.querySelector('.modal-img');
+const modalText = document.querySelector('.modal-text');
 
-modal.display('block');
+function showModal() {
+  let selection = this.getAttribute('data-div-info');
+  console.log(selection);
+
+  // switch (selection) {
+  //   case 'nostalgia':
+  //     modalImg = './assets/images/know-nostalgia-960x540.jpg';
+  //     modalText = 'text';
+  //     break;
+  // }
+
+  modalWindow.style.display = 'block';
+  modalWindow.classList.add('show');
+}
+
+function closeModal() {
+  modalWindow.style.display = 'none';
+  modalWindow.classList.remove('show');
+}
+
+for (const img of imgCol) {
+  img.addEventListener('click', showModal);
+}
+
+closeModalBtn.addEventListener('click', closeModal);
+
+window.onclick = function (e) {
+  if (e.target === modalWindow) {
+    closeModal();
+  }
+};

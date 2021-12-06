@@ -1,5 +1,5 @@
 $colorOne: #8ecae6;
-$button-visit: #219ebc;
+$button-page: #219ebc;
 $nav-footer: #023047;
 $colorFour: #ffb703;
 $button-code: #fb8500;
@@ -43,10 +43,10 @@ body {
     background-color: rgba($button-code, 0.6);
   }
   .btn-visit {
-    background-color: $button-visit;
+    background-color: $button-page;
   }
   .btn-visit:hover {
-    background-color: rgba($button-visit, 0.6);
+    background-color: rgba($button-page, 0.6);
   }
 }
 
@@ -145,33 +145,32 @@ body {
 }
 
 .modal-window {
-  width: 25rem;
-  padding: 0.5rem;
-  position: absolute;
-  top: 200%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-
-  .card-title {
+  h5 {
     font-family: 'Road Rage', cursive, sans-serif;
     font-size: 2rem;
     color: $button-code;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
 
+  .modal-img {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .modal-text {
+    margin-top: 1rem;
+  }
+
   .code-button {
     background-color: $button-code;
+    margin: 1rem;
   }
 
   .page-button {
-    background-color: $button-visit;
+    background-color: $button-page;
+    margin: 1rem;
   }
-}
-
-.hide-modal {
-  display: none;
 }
 
 .custom-footer {

@@ -202,22 +202,63 @@
         </div>
 
         <!-- MODAL WINDOW -->
-        <div class="card modal-window hide-modal">
-          <img
-            class="card-img-top"
-            src="./assets/images/know-nostalgia-960x540.jpg"
-            alt="Card image cap"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="btn code-button">View Code</a>
-            <a href="#" class="btn page-button">View Page</a>
+        <div
+          class="modal fade modal-window"
+          id="modal-window"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="modal-window-title">Modal title</h5>
+
+                <button
+                  type="button"
+                  class="close modal-close-button"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="modal-img">
+                  <img
+                    src="./assets/images/know-nostalgia-960x540.jpg"
+                    alt="know nostalgia"
+                  />
+                </div>
+                <div class="modal-text">
+                  <p>
+                    Created as a coding bootcamp project. The site was built
+                    using Bootstrap, SCSS, and vanilla JavaScript. One highlight
+                    of the site is that it utilizes an API to access a movie
+                    database to allow users to search for movies. I have limited
+                    the search results to only display movies that were released
+                    between 1990 - 2009, as those are the decades the site is
+                    dedicated to.
+                  </p>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <a href="#">
+                  <button type="button" class="btn code-button">
+                    View Code
+                  </button>
+                </a>
+                <a href="#">
+                  <button type="button" class="btn page-button">
+                    View Page
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
+        <!-- END MODAL WINDOW -->
       </div>
       <!-- END THIRD ROW -->
     </div>
