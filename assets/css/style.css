@@ -144,6 +144,10 @@ body a {
   margin: 1rem;
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 .custom-footer {
   color: #fff;
   max-width: 100%;

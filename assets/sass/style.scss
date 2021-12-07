@@ -173,6 +173,10 @@ body {
   }
 }
 
+.blur {
+  filter: blur(5px);
+}
+
 .custom-footer {
   color: $nav-footer-text;
   max-width: 100%;
