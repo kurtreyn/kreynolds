@@ -20,6 +20,8 @@ const linkList = {
   ideaPage: 'https://kurtreyn.github.io/photographysite/index.html',
   storyCode: 'https://github.com/kurtreyn/storyteller',
   storyPage: 'https://storytellerstudios.netlify.app',
+  leoCode: 'https://github.com/kurtreyn/ecommerce',
+  leoPage: 'https://leodesigns.netlify.app',
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -61,6 +63,9 @@ function addOverlay() {
       } else if (divInfo === 'story') {
         code = linkList.storyCode;
         page = linkList.storyPage;
+      } else if (divInfo === 'leo') {
+        code = linkList.leoCode;
+        page = linkList.leoPage;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -109,6 +114,10 @@ const sourceList = {
   storyImg: './assets/images/storyteller-thumbnail-960x540.jpg',
   storyTitle: 'Storyteller Studios',
   storyText: `This is the first site I made when I started to learn coding. Made with HTML and CSS. The site is for my small film production group, Storyteller Studios.`,
+  leoImg: './assets/images/leo-designs-960x540.png',
+  leoTitle: 'Leo Designs',
+  leoText:
+    'A fictional e-commerce site. The site is built with vanilla JavaScript, SCSS, and Bootstrap 5. The site uses a custom built API which I made on Contentful.',
 };
 
 function showModal() {
@@ -145,6 +154,12 @@ function showModal() {
       modalCodeBtn.href = linkList.storyCode;
       modalPageBtn.href = linkList.storyPage;
       break;
+    case 'leo':
+      modalImg.src = sourceList.leoImg;
+      modalTitle.innerText = sourceList.leoTitle;
+      modalText.innerText = sourceList.leoText;
+      modalCodeBtn.href = linkList.storyCode;
+      modalPageBtn.href = linkList.storyPage;
   }
 
   modalWindow.style.display = 'block';
