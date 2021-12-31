@@ -83,6 +83,17 @@ body a {
   font-size: 3rem;
   color: #8ecae6;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  cursor: pointer;
+}
+.third-row h5 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  font-family: "Road Rage", cursive, sans-serif;
+  font-size: 2rem;
+  color: #ffb703;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .left-overlay {

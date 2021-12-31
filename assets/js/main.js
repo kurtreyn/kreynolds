@@ -22,6 +22,8 @@ const linkList = {
   storyPage: 'https://storytellerstudios.netlify.app',
   leoCode: 'https://github.com/kurtreyn/ecommerce',
   leoPage: 'https://leodesigns.netlify.app',
+  reactNostalgiaCode: `https://github.com/kurtreyn/knowNostalgia-react`,
+  reactNostalgiaPage: `https://knownostalgia-react.netlify.app/`,
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -66,6 +68,9 @@ function addOverlay() {
       } else if (divInfo === 'leo') {
         code = linkList.leoCode;
         page = linkList.leoPage;
+      } else if (divInfo === 'react-nostalgia') {
+        code = linkList.reactNostalgiaCode;
+        page = linkList.reactNostalgiaPage;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -118,6 +123,9 @@ const sourceList = {
   leoTitle: 'Leo Designs',
   leoText:
     'A fictional e-commerce site. The site is built with vanilla JavaScript, SCSS, and Bootstrap 5. The site uses a custom built API which I made on Contentful.',
+  reactNostalgiaImg: `./assets/images/react-knownostalgia-960x540.png`,
+  reactNostalgiaTitle: `Know(Nostalgia): React Version`,
+  reactNostalgiaText: `This app was made using React as part of a continuing Coding Bootcamp project. The app features the same functionality as the Bootstrap version.`,
 };
 
 function showModal() {
@@ -160,6 +168,13 @@ function showModal() {
       modalText.innerText = sourceList.leoText;
       modalCodeBtn.href = linkList.storyCode;
       modalPageBtn.href = linkList.storyPage;
+    case 'react-nostalgia':
+      modalImg.src = sourceList.reactNostalgiaImg;
+      modalTitle.innerText = sourceList.reactNostalgiaTitle;
+      modalText.innerText = sourceList.reactNostalgiaText;
+      modalCodeBtn.href = linkList.reactNostalgiaCode;
+      modalPageBtn.href = linkList.reactNostalgiaPage;
+      break;
   }
 
   modalWindow.style.display = 'block';
