@@ -1,5 +1,3 @@
-'use strict';
-
 const imgCol = document.querySelectorAll('[data-div-info]');
 const titles = document.querySelectorAll('[data-title-info]');
 let leftOverlay = document.createElement('div');
@@ -22,24 +20,14 @@ const linkList = {
   storyPage: 'https://storytellerstudios.netlify.app',
   leoCode: 'https://github.com/kurtreyn/ecommerce',
   leoPage: 'https://leodesigns.netlify.app',
-  reactNostalgiaCode: `https://github.com/kurtreyn/knowNostalgia-react`,
-  reactNostalgiaPage: `https://knownostalgia-react.netlify.app/`,
 };
 
 function createOverlay(codeLink, pageLink) {
   // let linkInfo = this.getAttribute('data-div-info');
   // console.log(this);
 
-  leftOverlay.innerHTML = `
-    <div class="left-overlay">
-        <a href="${codeLink}" target="_blank">View Code</a>
-    </div>
-    `;
-  rightOverlay.innerHTML = `
-    <div class="right-overlay">
-        <a href="${pageLink}" target="_blank">View Page</a>
-    </div>
-    `;
+  leftOverlay.innerHTML = ` <div class="left-overlay"> <a href="${codeLink}" target="_blank">View Code</a> </div> `;
+  rightOverlay.innerHTML = ` <div class="right-overlay"> <a href="${pageLink}" target="_blank">View Page</a> </div> `;
 }
 
 function addOverlay() {
@@ -168,6 +156,7 @@ function showModal() {
       modalText.innerText = sourceList.leoText;
       modalCodeBtn.href = linkList.storyCode;
       modalPageBtn.href = linkList.storyPage;
+      break;
     case 'react-nostalgia':
       modalImg.src = sourceList.reactNostalgiaImg;
       modalTitle.innerText = sourceList.reactNostalgiaTitle;
