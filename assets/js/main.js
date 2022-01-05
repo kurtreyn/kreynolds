@@ -20,6 +20,8 @@ const linkList = {
   storyPage: 'https://storytellerstudios.netlify.app',
   leoCode: 'https://github.com/kurtreyn/ecommerce',
   leoPage: 'https://leodesigns.netlify.app',
+  reactNostalgiaCode: `https://github.com/kurtreyn/knowNostalgia-react`,
+  reactNostalgiaPage: `https://knownostalgia-react.netlify.app/`,
 };
 
 function createOverlay(codeLink, pageLink) {
