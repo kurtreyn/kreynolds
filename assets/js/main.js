@@ -22,6 +22,8 @@ const linkList = {
   leoPage: 'https://leodesigns.netlify.app',
   reactNostalgiaCode: `https://github.com/kurtreyn/knowNostalgia-react`,
   reactNostalgiaPage: `https://knownostalgia-react.netlify.app/`,
+  soChillCode: `https://github.com/kurtreyn/sochill`,
+  soChillPage: `https://sochillnetwork.netlify.app`,
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -61,6 +63,9 @@ function addOverlay() {
       } else if (divInfo === 'react-nostalgia') {
         code = linkList.reactNostalgiaCode;
         page = linkList.reactNostalgiaPage;
+      } else if (divInfo === 'soChill') {
+        code = linkList.soChillCode;
+        page = linkList.soChillPage;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -116,6 +121,9 @@ const sourceList = {
   reactNostalgiaImg: `./assets/images/react-knownostalgia-960x540.png`,
   reactNostalgiaTitle: `Know(Nostalgia): React Version`,
   reactNostalgiaText: `This app was made using React as part of a continuing Coding Bootcamp project. The app features the same functionality as the Bootstrap version.`,
+  soChillImg: `./assets/images/`,
+  soChillTitle: `soChill Media`,
+  soChillText: `Built with React, soChill Media uses React Bootstrap for the layout. User authentication is done through Firebase.`,
 };
 
 function showModal() {

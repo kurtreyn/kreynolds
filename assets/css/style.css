@@ -48,6 +48,12 @@ body a {
   color: #ffb703;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
+.first-row .badge-col {
+  display: flex;
+}
+.first-row .badge-col img {
+  max-width: 30%;
+}
 
 .second-row {
   margin-bottom: 2rem;
