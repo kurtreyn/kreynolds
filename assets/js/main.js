@@ -121,9 +121,9 @@ const sourceList = {
   reactNostalgiaImg: `./assets/images/react-knownostalgia-960x540.png`,
   reactNostalgiaTitle: `Know(Nostalgia): React Version`,
   reactNostalgiaText: `This app was made using React as part of a continuing Coding Bootcamp project. The app features the same functionality as the Bootstrap version.`,
-  soChillImg: `./assets/images/`,
+  soChillImg: `./assets/images/soChill-960x540.png`,
   soChillTitle: `soChill Media`,
-  soChillText: `Built with React, soChill Media uses React Bootstrap for the layout. User authentication is done through Firebase.`,
+  soChillText: `Built with React, soChill Media uses React Bootstrap for the layout. User authentication is done through Firebase. This is an ongoing project and more features will be added.`,
 };
 
 function showModal() {
@@ -173,6 +173,13 @@ function showModal() {
       modalText.innerText = sourceList.reactNostalgiaText;
       modalCodeBtn.href = linkList.reactNostalgiaCode;
       modalPageBtn.href = linkList.reactNostalgiaPage;
+      break;
+    case 'soChill':
+      modalImg.src = sourceList.soChillImg;
+      modalTitle.innerText = sourceList.soChillTitle;
+      modalText.innerText = sourceList.soChillText;
+      modalCodeBtn.href = linkList.soChillCode;
+      modalPageBtn.href = linkList.soChillPage;
       break;
   }
 
