@@ -24,6 +24,8 @@ const linkList = {
   reactNostalgiaPage: `https://knownostalgia-react.netlify.app/`,
   soChillCode: `https://github.com/kurtreyn/sochill`,
   soChillPage: `https://sochillnetwork.netlify.app`,
+  feExJan22Code: `https://github.com/kurtreyn/fetch-rewards-kurt`,
+  feExJan22Page: `https://frontendtakehomekurtreynolds.netlify.app`,
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -66,6 +68,9 @@ function addOverlay() {
       } else if (divInfo === 'soChill') {
         code = linkList.soChillCode;
         page = linkList.soChillPage;
+      } else if (divInfo === 'fe-exercise-jan22') {
+        code = linkList.feExJan22Code;
+        page = linkList.feExJan22Page;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -124,6 +129,9 @@ const sourceList = {
   soChillImg: `./assets/images/soChill-960x540.png`,
   soChillTitle: `soChill Media`,
   soChillText: `Built with React, soChill Media uses React Bootstrap for the layout. User authentication is done through Firebase. This is an ongoing project and more features will be added.`,
+  feExJan22Img: `./assets/images/fe-exercise-jan-2022-960x540.png`,
+  feExJan22Title: `Front End Exercise`,
+  feExJan22Text: `Made using React and React Bootstrap. This utilizes an API to fetch data to populate the form's occupation and state fields. As well, users are able to post data back to the server. The app also uses form control to prevent the submit if predetermined criteria was not met. Error messages are displayed on screen as well as a message for successfully submitting the form.`,
 };
 
 function showModal() {
@@ -180,6 +188,13 @@ function showModal() {
       modalText.innerText = sourceList.soChillText;
       modalCodeBtn.href = linkList.soChillCode;
       modalPageBtn.href = linkList.soChillPage;
+      break;
+    case 'fe-exercise-jan22':
+      modalImg.src = sourceList.feExJan22Img;
+      modalTitle.innerText = sourceList.feExJan22Title;
+      modalText.innerText = sourceList.feExJan22Text;
+      modalCodeBtn.href = linkList.feExJan22Code;
+      modalPageBtn.href = linkList.feExJan22Page;
       break;
   }
 
