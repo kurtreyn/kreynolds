@@ -58,8 +58,8 @@ body {
     }
   }
   h1 {
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
     color: $colorFour;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
@@ -74,12 +74,19 @@ body {
 }
 
 .second-row {
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
-  h2 {
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 3rem;
-    color: $colorFour;
-    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+
+  .title-col {
+    display: flex;
+    justify-content: center;
+    h2 {
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 2rem;
+      color: $colorFour;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    }
   }
 }
 
@@ -107,8 +114,9 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 3rem;
+    // font-family: 'Road Rage', cursive, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
     color: $colorOne;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
     cursor: pointer;
@@ -118,8 +126,8 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-60%, -50%);
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
     color: $colorFour;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
@@ -137,8 +145,8 @@ body {
   align-content: center;
 
   a {
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
     color: $button-code;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
@@ -156,8 +164,8 @@ body {
   align-content: center;
 
   a {
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
     color: $button-code;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }
@@ -165,8 +173,8 @@ body {
 
 .modal-window {
   h5 {
-    font-family: 'Road Rage', cursive, sans-serif;
-    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3rem;
     color: $button-code;
     text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   }

@@ -5,7 +5,6 @@ let rightOverlay = document.createElement('div');
 let divInfo = '';
 let titleInfo = '';
 let linkInfo = '';
-// let hFourInfo = '';
 let code = '';
 let page = '';
 
@@ -131,7 +130,7 @@ const sourceList = {
   soChillText: `Built with React, soChill Media uses React Bootstrap for the layout. User authentication is done through Firebase using sign in with Google. Users are able to sign in with their Google account and make posts.`,
   feExJan22Img: `./assets/images/fe-exercise-jan-2022-960x540.png`,
   feExJan22Title: `Front End Exercise`,
-  feExJan22Text: `Made using React and React Bootstrap. This utilizes an API to fetch data to populate the form's occupation and state fields. As well, users are able to post data back to the server. The app also uses form control to prevent the submit if predetermined criteria was not met. Error messages are displayed on screen as well as a message for successfully submitting the form.`,
+  feExJan22Text: `Made using React and React Bootstrap. This utilizes an API to fetch data to populate the form's occupation and state fields. As well, users are able to post data back to the server. The app also uses form control to prevent the submit if predetermined criteria was not met. Error messages are displayed on screen as well as a message for successfully submitting the form. Reusable components were made for the form inputs.`,
 };
 
 function showModal() {

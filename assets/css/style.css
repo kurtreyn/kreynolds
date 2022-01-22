@@ -43,8 +43,8 @@ body a {
   max-width: 50%;
 }
 .first-row h1 {
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 4rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
   color: #ffb703;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -56,11 +56,17 @@ body a {
 }
 
 .second-row {
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
 }
-.second-row h2 {
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 3rem;
+.second-row .title-col {
+  display: flex;
+  justify-content: center;
+}
+.second-row .title-col h2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
   color: #ffb703;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -85,8 +91,8 @@ body a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 3rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
   color: #8ecae6;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
   cursor: pointer;
@@ -96,8 +102,8 @@ body a {
   top: 60%;
   left: 50%;
   transform: translate(-60%, -50%);
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
   color: #ffb703;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -115,8 +121,8 @@ body a {
   align-content: center;
 }
 .left-overlay a {
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 1.7rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
   color: #fb8500;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
@@ -134,15 +140,15 @@ body a {
   align-content: center;
 }
 .right-overlay a {
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 1.7rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1rem;
   color: #fb8500;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .modal-window h5 {
-  font-family: "Road Rage", cursive, sans-serif;
-  font-size: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
   color: #fb8500;
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
