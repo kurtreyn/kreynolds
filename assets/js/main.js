@@ -25,6 +25,8 @@ const linkList = {
   soChillPage: `https://sochillmedia.netlify.app`,
   feExJan22Code: `https://github.com/kurtreyn/fetch-rewards-kurt`,
   feExJan22Page: `https://frontendtakehomekurtreynolds.netlify.app`,
+  ecomReactCode: `https://github.com/kurtreyn/react-ecommerce-app`,
+  ecomReactPage: `https://kurt-ecommercestore-react.netlify.app`,
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -70,6 +72,9 @@ function addOverlay() {
       } else if (divInfo === 'fe-exercise-jan22') {
         code = linkList.feExJan22Code;
         page = linkList.feExJan22Page;
+      } else if (divInfo === 'ecom-react') {
+        code = linkList.ecomReactCode;
+        page = linkList.ecomReactPage;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -131,6 +136,9 @@ const sourceList = {
   feExJan22Img: `./assets/images/fe-exercise-jan-2022-960x540.png`,
   feExJan22Title: `Front End Exercise`,
   feExJan22Text: `Made using React and React Bootstrap. This utilizes an API to fetch data to populate the form's occupation and state fields. As well, users are able to post data back to the server. The app also uses form control to prevent the submit if predetermined criteria was not met. Error messages are displayed on screen as well as a message for successfully submitting the form. Reusable components were made for the form inputs.`,
+  ecomReactImg: `./assets/images/ecom-react960x540.png`,
+  ecomReactTitle: `E-Commerce with Checkout`,
+  ecomReactText: `Created with React and using CommerceJS and Stripe for payment authorization. Products are fetched with the CommerceJS API. The backend payment support is handled with Stripe.`,
 };
 
 function showModal() {
@@ -195,6 +203,12 @@ function showModal() {
       modalCodeBtn.href = linkList.feExJan22Code;
       modalPageBtn.href = linkList.feExJan22Page;
       break;
+    case 'ecom-react':
+      modalImg.src = sourceList.ecomReactImg;
+      modalTitle.innerText = sourceList.ecomReactTitle;
+      modalText.innerText = sourceList.ecomReactText;
+      modalCodeBtn.href = linkList.ecomReactCode;
+      modalPageBtn.href = linkList.ecomReactPage;
   }
 
   modalWindow.style.display = 'block';
