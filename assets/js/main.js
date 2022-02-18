@@ -179,8 +179,8 @@ function showModal() {
       modalImg.src = sourceList.leoImg;
       modalTitle.innerText = sourceList.leoTitle;
       modalText.innerText = sourceList.leoText;
-      modalCodeBtn.href = linkList.storyCode;
-      modalPageBtn.href = linkList.storyPage;
+      modalCodeBtn.href = linkList.leoCode;
+      modalPageBtn.href = linkList.leoPage;
       break;
     case 'react-nostalgia':
       modalImg.src = sourceList.reactNostalgiaImg;
@@ -220,6 +220,9 @@ function closeModal() {
   modalWindow.classList.remove('show');
   container.classList.remove('blur');
 }
+
+modalCodeBtn.addEventListener('click', closeModal);
+modalPageBtn.addEventListener('click', closeModal);
 
 for (const img of imgCol) {
   img.addEventListener('click', showModal);

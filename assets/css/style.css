@@ -50,9 +50,10 @@ body a {
 }
 .first-row .badge-col {
   display: flex;
+  justify-content: center;
 }
 .first-row .badge-col img {
-  max-width: 30%;
+  max-width: 60%;
 }
 
 .second-row {
