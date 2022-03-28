@@ -217,6 +217,7 @@ function showModal() {
       modalText.innerText = sourceList.ecomReactText;
       modalCodeBtn.href = linkList.ecomReactCode;
       modalPageBtn.href = linkList.ecomReactPage;
+      break;
     case 'iGram':
       modalImg.src = sourceList.iGramImg;
       modalTitle.innerText = sourceList.iGramTitle;
