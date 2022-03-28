@@ -27,6 +27,8 @@ const linkList = {
   feExJan22Page: `https://frontendtakehomekurtreynolds.netlify.app`,
   ecomReactCode: `https://github.com/kurtreyn/react-ecommerce-app`,
   ecomReactPage: `https://kurt-ecommercestore-react.netlify.app`,
+  iGramCode: `https://github.com/kurtreyn/igram`,
+  iGramPage: `https://expo.dev/@kurtreyn/igram`,
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -75,6 +77,9 @@ function addOverlay() {
       } else if (divInfo === 'ecom-react') {
         code = linkList.ecomReactCode;
         page = linkList.ecomReactPage;
+      } else if (divInfo === 'iGram') {
+        code = linkList.iGramCode;
+        page = linkList.iGramPage;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -139,6 +144,9 @@ const sourceList = {
   ecomReactImg: `./assets/images/ecom-react960x540.png`,
   ecomReactTitle: `E-Commerce with Checkout`,
   ecomReactText: `Created with React and using CommerceJS and Stripe for payment authorization. Products are fetched with the CommerceJS API. The backend payment support is handled with Stripe.`,
+  iGramImg: `./assets/images/iGram.png`,
+  iGramTitle: `iGram`,
+  iGramText: `Developed using React Native, Expo and Firebase. This app is an Instagram clone which has fully functioning image posting, taking and uploading photos, registration, authentication, and ability to change the user's profile picture.`,
 };
 
 function showModal() {
@@ -209,6 +217,12 @@ function showModal() {
       modalText.innerText = sourceList.ecomReactText;
       modalCodeBtn.href = linkList.ecomReactCode;
       modalPageBtn.href = linkList.ecomReactPage;
+    case 'iGram':
+      modalImg.src = sourceList.iGramImg;
+      modalTitle.innerText = sourceList.iGramTitle;
+      modalText.innerText = sourceList.iGramText;
+      modalCodeBtn.href = linkList.iGramCode;
+      modalPageBtn.href = linkList.iGramPage;
   }
 
   modalWindow.style.display = 'block';
