@@ -29,6 +29,9 @@ const linkList = {
   ecomReactPage: `https://kurt-ecommercestore-react.netlify.app`,
   iGramCode: `https://github.com/kurtreyn/igram`,
   iGramPage: `https://expo.dev/@kurtreyn/igram`,
+  burnCodeFront: `https://github.com/kurtreyn/burn-after-reading-frontend`,
+  burnCodeBack: `https://github.com/kurtreyn/burn-after-reading-server`,
+  burnPage: `https://burn-after-reading.netlify.app`,
 };
 
 function createOverlay(codeLink, pageLink) {
@@ -80,6 +83,12 @@ function addOverlay() {
       } else if (divInfo === 'iGram') {
         code = linkList.iGramCode;
         page = linkList.iGramPage;
+      } else if (divInfo === 'burnFront') {
+        code = linkList.burnCodeFront;
+        page = linkList.burnPage;
+      } else if (divInfo === 'burnBack') {
+        code = linkList.burnCodeBack;
+        page = linkList.burnPage;
       }
       createOverlay(code, page);
       imgCol[i].appendChild(leftOverlay);
@@ -147,6 +156,12 @@ const sourceList = {
   iGramImg: `./assets/images/iGram.png`,
   iGramTitle: `iGram`,
   iGramText: `Developed using React Native, Expo and Firebase. This app is an Instagram clone which has fully functioning image posting, taking and uploading photos, registration, authentication, and ability to change the user's profile picture.`,
+  burnFrontImg: `./assets/images/burn-after-reading.png`,
+  burnFrontTitle: `Burn After Reading: Front End`,
+  burnFrontText: `Created using React and React Bootstrap. This is a front-end part of the app. The app allows users to create a new message and post it to the server. When the message is clicked, a unique URL opens up, and once the user clicks to return to the home page, the message automatically deletes from the server.`,
+  burnBackImg: `./assets/images/burn-server.png`,
+  burnBackTitle: `Burn After Reading: Back End`,
+  burnBackText: `Created using Node.js and Express. This is a back-end part of the app. The app allows users to create a new message which the server saves to an online MongoDB database which allows GET, POST, and DELETE requests.`,
 };
 
 function showModal() {
@@ -224,6 +239,21 @@ function showModal() {
       modalText.innerText = sourceList.iGramText;
       modalCodeBtn.href = linkList.iGramCode;
       modalPageBtn.href = linkList.iGramPage;
+      break;
+    case 'burnFront':
+      modalImg.src = sourceList.burnFrontImg;
+      modalTitle.innerText = sourceList.burnFrontTitle;
+      modalText.innerText = sourceList.burnFrontText;
+      modalCodeBtn.href = linkList.burnFrontCode;
+      modalPageBtn.href = linkList.burnFrontPage;
+      break;
+    case 'burnBack':
+      modalImg.src = sourceList.burnBackImg;
+      modalTitle.innerText = sourceList.burnBackTitle;
+      modalText.innerText = sourceList.burnBackText;
+      modalCodeBtn.href = linkList.burnBackCode;
+      modalPageBtn.href = linkList.burnBackPage;
+      break;
   }
 
   modalWindow.style.display = 'block';
